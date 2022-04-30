@@ -95,9 +95,7 @@ const Carousel = styled(Slider)`
         opacity: 0;
         height: 100%;
         width: 5vw;
-        z-index: 1;
-
-        
+        z-index: 1; 
     }
     &:hover button{
             opacity: 1;
@@ -120,6 +118,17 @@ const Carousel = styled(Slider)`
     .slick-next{
         right: -5vw;  
     }
+
+    @media (max-width : 1023px) {
+
+        .slick-prev{
+            left: -2vw;  
+        }
+    
+        .slick-next{
+            right: -2vw;  
+        }
+    }
     
 
    
@@ -133,7 +142,8 @@ const Content = styled.div`
     border-radius:5px;
     margin: 0px 15px;
     padding-left: 30px;
-    @media (max-width: 1000px) {
+
+    @media (max-width: 1023px) {
         padding : 0px;
         margin: 0px 8px;
         box-shadow:none;
@@ -150,7 +160,7 @@ const Info = styled.div`
         color : #b3b3b3;
         line-height: 1.6;
     }
-   @media (max-width: 1000px) {
+   @media (max-width: 1023px) {
         flex:0;
         display : none;
   }
@@ -159,7 +169,8 @@ const Info = styled.div`
 
 const Imagecontainer = styled.div`
     flex : 0.55;
-    @media (max-width: 1000px) {
+    
+    @media (max-width: 1023px) {
         flex : 1;
   }
 
@@ -173,7 +184,7 @@ const Image = styled.img`
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
-     @media (max-width: 1000px) {
+     @media (max-width: 1023px) {
         border-radius : 5px;
   }
 

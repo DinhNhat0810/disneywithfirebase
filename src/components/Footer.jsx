@@ -51,15 +51,17 @@ const Container = styled.div`
     margin-top: 26vh;
     padding: 0 24px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 739px) {
         flex-direction: column;
+        margin-top: 12vh;
+
     }
 `
 
 const Content = styled.div`
     width: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 739px) {
         width: 100%;
     }
 
